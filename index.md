@@ -3,28 +3,99 @@ layout: default
 title: SUSINIRGS - Trap Artist & Producer
 ---
 
+<!-- Floating Navigation -->
+<nav class="floating-nav">
+  <a href="#hero" class="nav-link">🏠 Home</a>
+  <a href="#videos" class="nav-link">🎬 Videos</a>
+  <a href="#tracks" class="nav-link">🎵 Tracks</a>
+  <a href="#gallery" class="nav-link">🎨 Gallery</a>
+  <a href="#projects" class="nav-link">🚀 Projects</a>
+  <a href="#connect" class="nav-link">🔗 Connect</a>
+  <style>
+    .floating-nav {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 9999;
+      background: rgba(10, 14, 39, 0.95);
+      border: 2px solid #ff006e;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: 0 10px 40px rgba(255, 0, 110, 0.3);
+      backdrop-filter: blur(10px);
+    }
+    
+    .floating-nav .nav-link {
+      color: #00f5ff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+    
+    .floating-nav .nav-link:hover {
+      background: rgba(255, 0, 110, 0.2);
+      border-color: #ff006e;
+      color: #ffbe0b;
+      transform: translateX(-5px);
+    }
+    
+    @media (max-width: 768px) {
+      .floating-nav {
+        flex-direction: row;
+        top: 10px;
+        bottom: auto;
+        right: 10px;
+        left: 10px;
+        padding: 10px;
+        overflow-x: auto;
+        gap: 5px;
+        max-width: calc(100vw - 20px);
+      }
+      
+      .floating-nav .nav-link {
+        font-size: 11px;
+        padding: 6px 10px;
+      }
+    }
+  </style>
+</nav>
+
 <!-- Hero Section -->
-<div class="hero-section">
+<div class="hero-section" id="hero">
   <div class="hero-content">
     <div class="artist-logo">
       <h1 class="artist-name">SUSINIRGS</h1>
       <p class="artist-tagline">🔥 TRAP | HIP-HOP | BEATS 🔥</p>
     </div>
-    <p class="hero-subtitle">Next Generation Trap & Hip-Hop Artist</p>
+    <p class="hero-subtitle">Artista Trap & Hip-Hop | Energía Mística Universal</p>
     <div class="hero-cta">
-      <a href="#tracks" class="btn btn-primary">Listen Now</a>
-      <a href="#projects" class="btn btn-secondary">Check Projects</a>
+      <a href="#tracks" class="btn btn-primary">Ver Mis Videos</a>
+      <a href="#gallery" class="btn btn-secondary">Galería Visual</a>
     </div>
   </div>
   <style>
     .hero-section {
-      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(26, 26, 62, 0.9) 100%), 
+                  url('CRANEO/silver-surfer-all-alone-in-the-space-wallpaper-with-ai-v0-68daljq9mide1.webp') center/cover;
       color: #fff;
-      padding: 80px 20px;
+      padding: 120px 20px;
       text-align: center;
       border-bottom: 3px solid #ff006e;
       position: relative;
       overflow: hidden;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     
     .hero-section::before {
@@ -42,11 +113,28 @@ title: SUSINIRGS - Trap Artist & Producer
         rgba(255, 0, 110, 0.03) 20px
       );
       pointer-events: none;
+      animation: slide 20s linear infinite;
+    }
+    
+    @keyframes slide {
+      0% { background-position: 0 0; }
+      100% { background-position: 100px 100px; }
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.8; }
     }
     
     .hero-content {
       position: relative;
       z-index: 1;
+      animation: float 6s ease-in-out infinite;
     }
     
     .artist-logo {
@@ -125,6 +213,130 @@ title: SUSINIRGS - Trap Artist & Producer
       color: #1a1a1a;
       transform: scale(1.05);
     }
+    
+    @media (max-width: 768px) {
+      .artist-name {
+        font-size: 48px !important;
+      }
+      
+      .artist-tagline {
+        font-size: 18px !important;
+      }
+      
+      .hero-subtitle {
+        font-size: 16px !important;
+      }
+      
+      .hero-section {
+        padding: 80px 15px !important;
+        min-height: 500px !important;
+      }
+    }
+  </style>
+</div>
+
+---
+
+<!-- Video Embeds Section -->
+<div class="video-section" id="videos">
+  <h2>🎬 VIDEOS DESTACADOS 🎬</h2>
+  <div class="video-grid">
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/cB5sIhH067A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h3>PROYECTO MÁS RECIENTE</h3>
+      <p>Mi trabajo más fresco y actual</p>
+    </div>
+    
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/uDAziScqsUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h3>VIDEO MÁS CRANEADO</h3>
+      <p>El video que más cerebro me voló</p>
+    </div>
+    
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/zAjGlkn3udw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h3>ENERGÍA MÍSTICA UNIVERSAL</h3>
+      <p>Proyecto con vibras cósmicas</p>
+    </div>
+  </div>
+  
+  <style>
+    .video-section {
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #1a1a3e 0%, #0f0f2e 100%);
+      color: #fff;
+    }
+    
+    .video-section h2 {
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 60px;
+      color: #ff006e;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 900;
+      text-shadow: 0 0 20px rgba(255, 0, 110, 0.5);
+    }
+    
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 40px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    .video-card {
+      background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+      border: 3px solid #ff006e;
+      border-radius: 12px;
+      padding: 20px;
+      transition: all 0.4s ease;
+      box-shadow: 0 10px 30px rgba(255, 0, 110, 0.2);
+    }
+    
+    .video-card:hover {
+      transform: translateY(-15px);
+      border-color: #00ff00;
+      box-shadow: 0 20px 60px rgba(255, 0, 110, 0.4);
+    }
+    
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .video-card h3 {
+      font-size: 22px;
+      margin: 15px 0 10px 0;
+      color: #ffbe0b;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .video-card p {
+      font-size: 14px;
+      color: #bbb;
+      margin: 0;
+    }
   </style>
 </div>
 
@@ -132,62 +344,75 @@ title: SUSINIRGS - Trap Artist & Producer
 
 <!-- Tracks Section -->
 <div class="tracks-section" id="tracks">
-  <h2>🎵 HOTTEST TRACKS 🎵</h2>
+  <h2>🎵 MIS PROYECTOS MÁS CRANEADOS 🎵</h2>
   <div class="tracks-grid">
     <div class="track-card">
       <div class="track-number">01</div>
-      <h3>TRAP DYNASTY</h3>
-      <p class="track-info">Hard-hitting trap beat with aggressive hi-hats</p>
-      <p class="track-stats">🔥 2.3M Listens</p>
-      <a href="#" class="track-btn">▶ PLAY</a>
+      <h3>PROYECTO MÁS RECIENTE</h3>
+      <p class="track-info">Mi trabajo más fresco y actual</p>
+      <p class="track-stats">🔥 Nuevo Release</p>
+      <a href="https://www.youtube.com/watch?v=cB5sIhH067A" target="_blank" class="track-btn">▶ VER</a>
     </div>
     
     <div class="track-card">
       <div class="track-number">02</div>
-      <h3>NEON NIGHTS</h3>
-      <p class="track-info">Hypnotic synth-driven trap anthem</p>
-      <p class="track-stats">🔥 1.8M Listens</p>
-      <a href="#" class="track-btn">▶ PLAY</a>
+      <h3>VIDEO MÁS CRANEADO</h3>
+      <p class="track-info">El video que más cerebro me voló</p>
+      <p class="track-stats">🔥 Top Vibes</p>
+      <a href="https://www.youtube.com/watch?v=uDAziScqsUk" target="_blank" class="track-btn">▶ VER</a>
     </div>
     
     <div class="track-card">
       <div class="track-number">03</div>
-      <h3>CROWN</h3>
-      <p class="track-info">Premium rap track for the top dogs</p>
-      <p class="track-stats">🔥 1.5M Listens</p>
-      <a href="#" class="track-btn">▶ PLAY</a>
+      <h3>ENERGÍA MÍSTICA UNIVERSAL</h3>
+      <p class="track-info">Proyecto con vibras cósmicas</p>
+      <p class="track-stats">🔥 Mística Total</p>
+      <a href="https://www.youtube.com/watch?v=zAjGlkn3udw" target="_blank" class="track-btn">▶ VER</a>
     </div>
     
     <div class="track-card">
       <div class="track-number">04</div>
-      <h3>NIGHT MODE</h3>
-      <p class="track-info">Dark, moody trap production masterpiece</p>
-      <p class="track-stats">🔥 1.2M Listens</p>
-      <a href="#" class="track-btn">▶ PLAY</a>
+      <h3>MÁS RAPERO</h3>
+      <p class="track-info">Flow puro y lírica real</p>
+      <p class="track-stats">🔥 Rap Game</p>
+      <a href="https://www.youtube.com/watch?v=otPFUIPQkIs" target="_blank" class="track-btn">▶ VER</a>
     </div>
     
     <div class="track-card">
       <div class="track-number">05</div>
-      <h3>GRIND NEVER STOPS</h3>
-      <p class="track-info">Motivational hip-hop anthem for hustlers</p>
-      <p class="track-stats">🔥 980K Listens</p>
-      <a href="#" class="track-btn">▶ PLAY</a>
+      <h3>DATA SAGRADA</h3>
+      <p class="track-info">Información pura y espiritual</p>
+      <p class="track-stats">🔥 Sacred</p>
+      <a href="https://www.youtube.com/watch?v=VcEhBUNhPs4" target="_blank" class="track-btn">▶ VER</a>
     </div>
     
     <div class="track-card">
       <div class="track-number">06</div>
-      <h3>DIGITAL CRIME</h3>
-      <p class="track-info">Cyberpunk trap vibes with heavy bass</p>
-      <p class="track-stats">🔥 750K Listens</p>
-      <a href="#" class="track-btn">▶ PLAY</a>
+      <h3>LA DIFERENCIA ES LO QUE VALE</h3>
+      <p class="track-info">Proyecto excepcional y único</p>
+      <p class="track-stats">🔥 Diferente</p>
+      <a href="https://www.youtube.com/watch?v=J-li4emQsS0" target="_blank" class="track-btn">▶ VER</a>
     </div>
   </div>
   
   <style>
     .tracks-section {
       padding: 80px 20px;
-      background: #0f0f0f;
+      background: linear-gradient(135deg, rgba(15, 15, 15, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%),
+                  url('CRANEO/Batman-Wallpapers-Desktop-32209.jpg') center/cover fixed;
       color: #fff;
+      position: relative;
+    }
+    
+    .tracks-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      pointer-events: none;
     }
     
     .tracks-section h2 {
@@ -198,6 +423,8 @@ title: SUSINIRGS - Trap Artist & Producer
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: 900;
+      position: relative;
+      z-index: 1;
     }
     
     .tracks-grid {
@@ -206,6 +433,8 @@ title: SUSINIRGS - Trap Artist & Producer
       gap: 30px;
       max-width: 1200px;
       margin: 0 auto;
+      position: relative;
+      z-index: 1;
     }
     
     .track-card {
@@ -293,74 +522,159 @@ title: SUSINIRGS - Trap Artist & Producer
 
 ---
 
+<!-- Gallery Section -->
+<div class="gallery-section" id="gallery">
+  <h2>🎨 VISUAL CRANEO 🎨</h2>
+  <p class="gallery-subtitle">Arte y estética que define mi música</p>
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="CRANEO/SPOOKY (1) (1).png" alt="Spooky Art" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/@720pts.jpeg" alt="720pts" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/GcM5IGVXMAAPiLF.jpeg" alt="Visual Art" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/_Freedom starts from within__.jpeg" alt="Freedom" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/download - 2025-12-09T124825.697.jpg" alt="Art 1" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/download - 2025-12-09T125039.980.jpg" alt="Art 2" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/download - 2025-12-09T125120.584.jpg" alt="Art 3" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/download - 2025-12-09T125323.452.jpg" alt="Art 4" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/silver-surfer-all-alone-in-the-space-wallpaper-with-ai-v0-68daljq9mide1.webp" alt="Silver Surfer" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/god.jpg" alt="God" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/pollloooo.jpeg" alt="Pollo" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/🂡 ʳˡʸᶜʳᵘˢʰ.jpeg" alt="Crush" loading="lazy"></div>
+  </div>
+  
+  <style>
+    .gallery-section {
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+      color: #fff;
+    }
+    
+    .gallery-section h2 {
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #8338ec;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 900;
+    }
+    
+    .gallery-subtitle {
+      text-align: center;
+      font-size: 20px;
+      color: #bbb;
+      margin-bottom: 50px;
+      font-style: italic;
+    }
+    
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      border: 3px solid #333;
+      transition: all 0.4s ease;
+      aspect-ratio: 1;
+      background: #000;
+    }
+    
+    .gallery-item:hover {
+      transform: scale(1.05) rotate(2deg);
+      border-color: #ff006e;
+      box-shadow: 0 20px 50px rgba(255, 0, 110, 0.5);
+      z-index: 10;
+    }
+    
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.4s ease;
+    }
+    
+    .gallery-item:hover img {
+      transform: scale(1.1);
+      filter: brightness(1.2) saturate(1.3);
+    }
+  </style>
+</div>
+
+---
+
 <!-- Featured Projects Section -->
 <div class="projects-section" id="projects">
-  <h2>🚀 FEATURED PROJECTS 🚀</h2>
+  <h2>🚀 MIS PROYECTOS DESTACADOS 🚀</h2>
   <div class="projects-grid">
     <div class="project-card">
       <div class="project-icon">🎬</div>
-      <h3>TRAP BEATS VOL. 1</h3>
-      <p>Exclusive collection of 50 hard-hitting trap instrumentals. Perfect for producers and creators worldwide.</p>
+      <h3>CANAL DE YOUTUBE</h3>
+      <p>Todo mi contenido audiovisual, videos musicales, y proyectos visuales están en mi canal oficial. Suscríbete para no perderte nada.</p>
       <div class="project-meta">
-        <span class="tag">Production</span>
-        <span class="tag">Beats</span>
+        <span class="tag">Videos</span>
+        <span class="tag">Music</span>
       </div>
-      <a href="#" class="project-link">Explore →</a>
+      <a href="https://www.youtube.com/@susinirgs" target="_blank" class="project-link">Ver Canal →</a>
+    </div>
+    
+    <div class="project-card">
+      <div class="project-icon">🎵</div>
+      <h3>SPOTIFY OFICIAL</h3>
+      <p>Toda mi discografía disponible en Spotify. Escucha mis tracks, álbumes y proyectos completos.</p>
+      <div class="project-meta">
+        <span class="tag">Streaming</span>
+        <span class="tag">Music</span>
+      </div>
+      <a href="https://open.spotify.com/intl-es/artist/78uCfenEleQDaQJM21K2fk?si=7O3kEBUITZyZWnRXtJ8bhg" target="_blank" class="project-link">Escuchar →</a>
+    </div>
+    
+    <div class="project-card">
+      <div class="project-icon">📸</div>
+      <h3>INSTAGRAM</h3>
+      <p>Sígueme en Instagram para ver contenido exclusivo, behind the scenes, y actualizaciones diarias.</p>
+      <div class="project-meta">
+        <span class="tag">Social</span>
+        <span class="tag">Daily</span>
+      </div>
+      <a href="https://www.instagram.com/susinirgs/" target="_blank" class="project-link">Seguir →</a>
     </div>
     
     <div class="project-card">
       <div class="project-icon">🎙️</div>
-      <h3>STREET POETRY EP</h3>
-      <p>Raw and authentic hip-hop narratives capturing the essence of modern struggle and triumph. 8 tracks of pure lyricism.</p>
+      <h3>PROYECTO RECIENTE</h3>
+      <p>Mi trabajo más fresco y reciente. Un proyecto que representa mi evolución artística y creativa.</p>
       <div class="project-meta">
-        <span class="tag">Hip-Hop</span>
-        <span class="tag">Lyricism</span>
+        <span class="tag">New</span>
+        <span class="tag">Fresh</span>
       </div>
-      <a href="#" class="project-link">Explore →</a>
+      <a href="https://www.youtube.com/watch?v=cB5sIhH067A" target="_blank" class="project-link">Ver →</a>
     </div>
     
     <div class="project-card">
-      <div class="project-icon">🎛️</div>
-      <h3>REMIX PACKAGE</h3>
-      <p>Creative remixes of top tracks with experimental production techniques. Pushing boundaries of trap music.</p>
+      <div class="project-icon">🧠</div>
+      <h3>VIDEO MÁS CRANEADO</h3>
+      <p>El video que más cerebro me voló hacer. Creatividad pura y conceptos únicos.</p>
       <div class="project-meta">
-        <span class="tag">Remix</span>
-        <span class="tag">Experimental</span>
+        <span class="tag">Creative</span>
+        <span class="tag">Mind-Blown</span>
       </div>
-      <a href="#" class="project-link">Explore →</a>
+      <a href="https://www.youtube.com/watch?v=uDAziScqsUk" target="_blank" class="project-link">Ver →</a>
     </div>
     
     <div class="project-card">
-      <div class="project-icon">🔊</div>
-      <h3>SOUND DESIGN MASTERCLASS</h3>
-      <p>Educational content teaching the fundamentals of modern trap production and sound design principles.</p>
+      <div class="project-icon">✨</div>
+      <h3>ENERGÍA MÍSTICA</h3>
+      <p>Proyecto con vibras cósmicas y energía universal. Una experiencia única y espiritual.</p>
       <div class="project-meta">
-        <span class="tag">Education</span>
-        <span class="tag">Production</span>
+        <span class="tag">Mystic</span>
+        <span class="tag">Energy</span>
       </div>
-      <a href="#" class="project-link">Explore →</a>
-    </div>
-    
-    <div class="project-card">
-      <div class="project-icon">🌐</div>
-      <h3>COLLAB WITH TOP ARTISTS</h3>
-      <p>Exclusive collaborations featuring featured artists and producers from around the globe. Next-level authenticity.</p>
-      <div class="project-meta">
-        <span class="tag">Collaboration</span>
-        <span class="tag">Featured</span>
-      </div>
-      <a href="#" class="project-link">Explore →</a>
-    </div>
-    
-    <div class="project-card">
-      <div class="project-icon">💿</div>
-      <h3>MIXTAPE 2025</h3>
-      <p>The ultimate trap compilation for 2025. Featuring the freshest beats, hottest tracks, and emerging talent.</p>
-      <div class="project-meta">
-        <span class="tag">Mixtape</span>
-        <span class="tag">2025</span>
-      </div>
-      <a href="#" class="project-link">Explore →</a>
+      <a href="https://www.youtube.com/watch?v=zAjGlkn3udw" target="_blank" class="project-link">Ver →</a>
     </div>
   </div>
   
@@ -469,42 +783,22 @@ title: SUSINIRGS - Trap Artist & Producer
 ---
 
 <!-- Social Links Section -->
-<div class="social-section">
+<div class="social-section" id="connect">
   <h2>🔗 CONNECT WITH ME 🔗</h2>
   <p class="social-subtitle">Join the community and stay updated with fresh beats & announcements</p>
   
   <div class="social-links">
-    <a href="https://spotify.com" class="social-btn spotify" title="Spotify">
+    <a href="https://open.spotify.com/intl-es/artist/78uCfenEleQDaQJM21K2fk?si=7O3kEBUITZyZWnRXtJ8bhg" target="_blank" class="social-btn spotify" title="Spotify">
       <span class="icon">🎵</span>
       <span class="label">Spotify</span>
     </a>
-    <a href="https://soundcloud.com" class="social-btn soundcloud" title="SoundCloud">
-      <span class="icon">☁️</span>
-      <span class="label">SoundCloud</span>
-    </a>
-    <a href="https://youtube.com" class="social-btn youtube" title="YouTube">
+    <a href="https://www.youtube.com/@susinirgs" target="_blank" class="social-btn youtube" title="YouTube">
       <span class="icon">▶️</span>
       <span class="label">YouTube</span>
     </a>
-    <a href="https://twitter.com" class="social-btn twitter" title="Twitter/X">
-      <span class="icon">𝕏</span>
-      <span class="label">Twitter</span>
-    </a>
-    <a href="https://instagram.com" class="social-btn instagram" title="Instagram">
+    <a href="https://www.instagram.com/susinirgs/" target="_blank" class="social-btn instagram" title="Instagram">
       <span class="icon">📸</span>
       <span class="label">Instagram</span>
-    </a>
-    <a href="https://discord.com" class="social-btn discord" title="Discord">
-      <span class="icon">💬</span>
-      <span class="label">Discord</span>
-    </a>
-    <a href="https://tiktok.com" class="social-btn tiktok" title="TikTok">
-      <span class="icon">🎭</span>
-      <span class="label">TikTok</span>
-    </a>
-    <a href="mailto:contact@susinirgs.com" class="social-btn email" title="Email">
-      <span class="icon">✉️</span>
-      <span class="label">Email</span>
     </a>
   </div>
   
@@ -622,20 +916,99 @@ title: SUSINIRGS - Trap Artist & Producer
 
 <!-- Footer -->
 <footer class="footer">
-  <p>&copy; 2025 SUSINIRGS. All Rights Reserved. | Trap Artist & Producer</p>
-  <p style="color: #888; font-size: 12px;">🎵 Made with passion for the culture 🎵</p>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h3>SUSINIRGS</h3>
+      <p>🔥 TRAP | HIP-HOP | BEATS 🔥</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.youtube.com/@susinirgs" target="_blank">YouTube</a>
+      <a href="https://open.spotify.com/intl-es/artist/78uCfenEleQDaQJM21K2fk?si=7O3kEBUITZyZWnRXtJ8bhg" target="_blank">Spotify</a>
+      <a href="https://www.instagram.com/susinirgs/" target="_blank">Instagram</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 SUSINIRGS. All Rights Reserved.</p>
+    <p class="footer-tagline">🎵 Made with passion for the culture | Energía Mística Universal 🎵</p>
+  </div>
   <style>
     .footer {
-      background: #0f0f0f;
+      background: linear-gradient(135deg, #0a0e27 0%, #1a1a3e 100%);
       color: #888;
       text-align: center;
-      padding: 30px 20px;
-      border-top: 2px solid #ff006e;
+      padding: 50px 20px;
+      border-top: 3px solid #ff006e;
       font-size: 14px;
+      position: relative;
+      overflow: hidden;
     }
     
-    .footer p {
-      margin: 5px 0;
+    .footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #ff006e, #ffbe0b, #8338ec, #00ff00);
+      animation: rainbow 5s linear infinite;
+    }
+    
+    @keyframes rainbow {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    
+    .footer-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .footer-logo h3 {
+      font-size: 32px;
+      color: #ff006e;
+      margin: 0 0 10px 0;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    
+    .footer-logo p {
+      color: #ffbe0b;
+      font-weight: 700;
+      margin: 5px 0 30px 0;
+    }
+    
+    .footer-links {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+    
+    .footer-links a {
+      color: #00f5ff;
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      border-bottom: 2px solid transparent;
+    }
+    
+    .footer-links a:hover {
+      color: #00ff00;
+      border-bottom-color: #00ff00;
+      text-shadow: 0 0 10px #00ff00;
+    }
+    
+    .footer-copy {
+      margin: 30px 0 10px 0;
+      color: #bbb;
+    }
+    
+    .footer-tagline {
+      color: #888;
+      font-size: 12px;
+      font-style: italic;
     }
   </style>
 </footer>
