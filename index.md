@@ -5,12 +5,12 @@ title: SUSINIRGS - Trap Artist & Producer
 
 <!-- Floating Navigation -->
 <nav class="floating-nav">
-  <a href="#hero" class="nav-link">🏠 Home</a>
+  <a href="#hero" class="nav-link">🏠 Inicio</a>
   <a href="#videos" class="nav-link">🎬 Videos</a>
-  <a href="#tracks" class="nav-link">🎵 Tracks</a>
-  <a href="#gallery" class="nav-link">🎨 Gallery</a>
-  <a href="#projects" class="nav-link">🚀 Projects</a>
-  <a href="#connect" class="nav-link">🔗 Connect</a>
+  <a href="#tracks" class="nav-link">🎵 Música</a>
+  <a href="#gallery" class="nav-link">🎨 Galería</a>
+  <a href="#projects" class="nav-link">🚀 Links</a>
+  <a href="#connect" class="nav-link">🔗 Social</a>
   <style>
     .floating-nav {
       position: fixed;
@@ -151,7 +151,7 @@ title: SUSINIRGS - Trap Artist & Producer
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      text-shadow: 2px 2px 20px rgba(255, 0, 110, 0.3);
+      filter: drop-shadow(0 0 20px rgba(255, 0, 110, 0.8)) drop-shadow(0 0 40px rgba(255, 190, 11, 0.6));
     }
     
     .artist-tagline {
@@ -165,9 +165,10 @@ title: SUSINIRGS - Trap Artist & Producer
     
     .hero-subtitle {
       font-size: 20px;
-      color: #ccc;
+      color: #fff;
       margin: 20px 0 40px 0;
       font-weight: 300;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
     }
     
     .hero-cta {
@@ -334,8 +335,9 @@ title: SUSINIRGS - Trap Artist & Producer
     
     .video-card p {
       font-size: 14px;
-      color: #bbb;
+      color: #ddd;
       margin: 0;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     }
   </style>
 </div>
@@ -487,9 +489,10 @@ title: SUSINIRGS - Trap Artist & Producer
     
     .track-info {
       font-size: 14px;
-      color: #bbb;
+      color: #ddd;
       margin: 10px 0;
       font-style: italic;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     }
     
     .track-stats {
@@ -561,9 +564,10 @@ title: SUSINIRGS - Trap Artist & Producer
     .gallery-subtitle {
       text-align: center;
       font-size: 20px;
-      color: #bbb;
+      color: #ddd;
       margin-bottom: 50px;
       font-style: italic;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     }
     
     .gallery-grid {
@@ -607,9 +611,9 @@ title: SUSINIRGS - Trap Artist & Producer
 
 ---
 
-<!-- Featured Projects Section -->
+<!-- Featured Links Section -->
 <div class="projects-section" id="projects">
-  <h2>🚀 MIS PROYECTOS DESTACADOS 🚀</h2>
+  <h2>🚀 DONDE ENCONTRARME 🚀</h2>
   <div class="projects-grid">
     <div class="project-card">
       <div class="project-icon">🎬</div>
@@ -735,10 +739,11 @@ title: SUSINIRGS - Trap Artist & Producer
     
     .project-card p {
       font-size: 14px;
-      color: #bbb;
+      color: #ddd;
       margin: 0 0 20px 0;
       line-height: 1.6;
       flex-grow: 1;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     }
     
     .project-meta {
@@ -1002,7 +1007,8 @@ title: SUSINIRGS - Trap Artist & Producer
     
     .footer-copy {
       margin: 30px 0 10px 0;
-      color: #bbb;
+      color: #ddd;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     }
     
     .footer-tagline {

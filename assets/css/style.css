@@ -15,13 +15,47 @@
 }
 
 html, body {
-  background: linear-gradient(135deg, #0a0e27 0%, #1a1a3e 50%, #0f0f2e 100%);
-  background-attachment: fixed;
-  color: #ffffff;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1a3e 50%, #0f0f2e 100%) !important;
+  background-attachment: fixed !important;
+  color: #ffffff !important;
   font-family: 'Arial', 'Helvetica', sans-serif;
   line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Override Jekyll minimal theme's white container */
+.wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+section {
+  width: 100% !important;
+  max-width: 100% !important;
+  float: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+}
+
+/* Hide the default header/sidebar from minimal theme */
+header {
+  display: none !important;
+}
+
+/* Ensure full width for all containers */
+.container {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* ANIMACIONES */
@@ -47,22 +81,12 @@ html, body {
   50% { transform: scale(1.05); }
 }
 
-header {
-  background: linear-gradient(90deg, rgba(0, 255, 0, 0.1) 0%, rgba(255, 0, 110, 0.1) 50%, rgba(0, 245, 255, 0.1) 100%);
-  padding: 50px 20px;
-  text-align: center;
-  border-bottom: 3px solid #00ff00;
-  border-top: 3px solid #ff006e;
-  box-shadow: 0 0 30px rgba(0, 255, 0, 0.3), inset 0 0 30px rgba(255, 0, 110, 0.1);
-  animation: pulse-neon 3s infinite;
-}
-
+/* Typography improvements for better visibility */
 h1 {
   font-size: 3.5em;
   font-weight: 900;
-  color: #00ff00;
-  text-shadow: 0 0 20px #00ff00, 0 0 40px #ff006e;
-  animation: glitch 0.3s infinite, beat 2s infinite;
+  color: #00ff00 !important;
+  text-shadow: 0 0 20px #00ff00, 0 0 40px #ff006e, 2px 2px 4px rgba(0, 0, 0, 0.8);
   letter-spacing: 3px;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -70,8 +94,8 @@ h1 {
 
 h2 {
   font-size: 2.5em;
-  color: #00f5ff;
-  text-shadow: 0 0 15px #00f5ff, 0 0 30px #ff006e;
+  color: #00f5ff !important;
+  text-shadow: 0 0 15px #00f5ff, 0 0 30px #ff006e, 2px 2px 4px rgba(0, 0, 0, 0.8);
   border-bottom: 2px solid #ff006e;
   padding-bottom: 15px;
   margin: 30px 0 20px 0;
@@ -79,39 +103,38 @@ h2 {
 }
 
 h3 {
-  color: #ffd700;
-  text-shadow: 0 0 10px #ffd700;
+  color: #ffd700 !important;
+  text-shadow: 0 0 10px #ffd700, 1px 1px 3px rgba(0, 0, 0, 0.8);
   margin: 20px 0 10px 0;
 }
 
 p {
-  color: #e0e0e0;
+  color: #e0e0e0 !important;
   font-size: 1.1em;
   margin: 15px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 a {
-  color: #00f5ff;
+  color: #00f5ff !important;
   text-decoration: none;
-  border-bottom: 2px solid #ff006e;
   transition: all 0.3s ease;
   font-weight: bold;
 }
 
 a:hover {
-  color: #00ff00;
+  color: #00ff00 !important;
   text-shadow: 0 0 15px #00ff00;
-  border-bottom: 2px solid #00ff00;
 }
 
 main {
-  background: linear-gradient(135deg, rgba(10, 14, 39, 0.8) 0%, rgba(26, 26, 62, 0.8) 100%);
-  padding: 50px;
-  margin: 40px auto;
-  max-width: 1000px;
-  border: 2px solid #00ff00;
-  border-radius: 10px;
-  box-shadow: 0 0 30px rgba(0, 255, 0, 0.4), inset 0 0 20px rgba(0, 245, 255, 0.1);
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .card {
@@ -186,17 +209,7 @@ pre code {
   border: none;
 }
 
-footer {
-  background: linear-gradient(90deg, rgba(0, 255, 0, 0.1) 0%, rgba(255, 0, 110, 0.1) 100%);
-  padding: 30px;
-  text-align: center;
-  border-top: 3px solid #ff006e;
-  border-bottom: 3px solid #00ff00;
-  margin-top: 60px;
-  color: #ffd700;
-  font-weight: bold;
-  box-shadow: 0 0 30px rgba(0, 255, 0, 0.2);
-}
+/* Remove old footer styles - using custom footer in index.md */
 
 .rap-beat {
   display: inline-block;
