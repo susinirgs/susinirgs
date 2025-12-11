@@ -4,8 +4,8 @@ description: Artista Trap & Hip-Hop | Energía Mística Universal - Videos, mús
 baseurl: ""
 url: "https://susinirgs.github.io"
 
-# Theme
-theme: jekyll-theme-minimal
+# Theme - Using custom layout
+# theme: jekyll-theme-minimal
 
 # Build settings
 markdown: kramdown
@@ -43,11 +43,11 @@ author:
 # Analytics (optional)
 # google_analytics: YOUR_GOOGLE_ANALYTICS_ID
 
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+# Plugins - Disabled for simplicity
+# plugins:
+#   - jekyll-feed
+#   - jekyll-sitemap
+#   - jekyll-seo-tag
 
 # Exclude these files from the build
 exclude:
