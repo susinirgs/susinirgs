@@ -1,0 +1,59 @@
+# GitHub Pages Configuration
+title: Susinirgs
+description: A personal website and portfolio
+baseurl: ""
+url: "https://susinirgs.github.io"
+
+# Theme
+theme: jekyll-theme-minimal
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Social links
+author:
+  name: Susinirgs
+  email: your-email@example.com
+  github: susinirgs
+
+# Analytics (optional)
+# google_analytics: YOUR_GOOGLE_ANALYTICS_ID
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude these files from the build
+exclude:
+  - .gitignore
+  - .github/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
