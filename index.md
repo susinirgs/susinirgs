@@ -121,9 +121,20 @@ title: SUSINIRGS - Trap Artist & Producer
       100% { background-position: 100px 100px; }
     }
     
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.8; }
+    }
+    
     .hero-content {
       position: relative;
       z-index: 1;
+      animation: float 6s ease-in-out infinite;
     }
     
     .artist-logo {
@@ -201,6 +212,25 @@ title: SUSINIRGS - Trap Artist & Producer
       background: #ffbe0b;
       color: #1a1a1a;
       transform: scale(1.05);
+    }
+    
+    @media (max-width: 768px) {
+      .artist-name {
+        font-size: 48px !important;
+      }
+      
+      .artist-tagline {
+        font-size: 18px !important;
+      }
+      
+      .hero-subtitle {
+        font-size: 16px !important;
+      }
+      
+      .hero-section {
+        padding: 80px 15px !important;
+        min-height: 500px !important;
+      }
     }
   </style>
 </div>
