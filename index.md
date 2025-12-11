@@ -3,7 +3,73 @@ layout: default
 title: SUSINIRGS - Trap Artist & Producer
 ---
 
+<!-- Floating Navigation -->
+<nav class="floating-nav">
+  <a href="#hero" class="nav-link">🏠 Home</a>
+  <a href="#videos" class="nav-link">🎬 Videos</a>
+  <a href="#tracks" class="nav-link">🎵 Tracks</a>
+  <a href="#gallery" class="nav-link">🎨 Gallery</a>
+  <a href="#projects" class="nav-link">🚀 Projects</a>
+  <a href="#connect" class="nav-link">🔗 Connect</a>
+  <style>
+    .floating-nav {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 9999;
+      background: rgba(10, 14, 39, 0.95);
+      border: 2px solid #ff006e;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: 0 10px 40px rgba(255, 0, 110, 0.3);
+      backdrop-filter: blur(10px);
+    }
+    
+    .floating-nav .nav-link {
+      color: #00f5ff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+    
+    .floating-nav .nav-link:hover {
+      background: rgba(255, 0, 110, 0.2);
+      border-color: #ff006e;
+      color: #ffbe0b;
+      transform: translateX(-5px);
+    }
+    
+    @media (max-width: 768px) {
+      .floating-nav {
+        flex-direction: row;
+        top: auto;
+        bottom: 10px;
+        right: 10px;
+        left: 10px;
+        padding: 10px;
+        overflow-x: auto;
+        gap: 5px;
+      }
+      
+      .floating-nav .nav-link {
+        font-size: 11px;
+        padding: 6px 10px;
+      }
+    }
+  </style>
+</nav>
+
 <!-- Hero Section -->
+<div class="hero-section" id="hero">
 <div class="hero-section">
   <div class="hero-content">
     <div class="artist-logo">
@@ -141,6 +207,111 @@ title: SUSINIRGS - Trap Artist & Producer
 
 ---
 
+<!-- Video Embeds Section -->
+<div class="video-section" id="videos">
+  <h2>🎬 VIDEOS DESTACADOS 🎬</h2>
+  <div class="video-grid">
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/cB5sIhH067A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h3>PROYECTO MÁS RECIENTE</h3>
+      <p>Mi trabajo más fresco y actual</p>
+    </div>
+    
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/uDAziScqsUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h3>VIDEO MÁS CRANEADO</h3>
+      <p>El video que más cerebro me voló</p>
+    </div>
+    
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/zAjGlkn3udw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h3>ENERGÍA MÍSTICA UNIVERSAL</h3>
+      <p>Proyecto con vibras cósmicas</p>
+    </div>
+  </div>
+  
+  <style>
+    .video-section {
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #1a1a3e 0%, #0f0f2e 100%);
+      color: #fff;
+    }
+    
+    .video-section h2 {
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 60px;
+      color: #ff006e;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 900;
+      text-shadow: 0 0 20px rgba(255, 0, 110, 0.5);
+    }
+    
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 40px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    .video-card {
+      background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+      border: 3px solid #ff006e;
+      border-radius: 12px;
+      padding: 20px;
+      transition: all 0.4s ease;
+      box-shadow: 0 10px 30px rgba(255, 0, 110, 0.2);
+    }
+    
+    .video-card:hover {
+      transform: translateY(-15px);
+      border-color: #00ff00;
+      box-shadow: 0 20px 60px rgba(255, 0, 110, 0.4);
+    }
+    
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .video-card h3 {
+      font-size: 22px;
+      margin: 15px 0 10px 0;
+      color: #ffbe0b;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .video-card p {
+      font-size: 14px;
+      color: #bbb;
+      margin: 0;
+    }
+  </style>
+</div>
+
+---
+
 <!-- Tracks Section -->
 <div class="tracks-section" id="tracks">
   <h2>🎵 MIS PROYECTOS MÁS CRANEADOS 🎵</h2>
@@ -197,8 +368,21 @@ title: SUSINIRGS - Trap Artist & Producer
   <style>
     .tracks-section {
       padding: 80px 20px;
-      background: #0f0f0f;
+      background: linear-gradient(135deg, rgba(15, 15, 15, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%),
+                  url('CRANEO/Batman-Wallpapers-Desktop-32209.jpg') center/cover fixed;
       color: #fff;
+      position: relative;
+    }
+    
+    .tracks-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      pointer-events: none;
     }
     
     .tracks-section h2 {
@@ -209,6 +393,8 @@ title: SUSINIRGS - Trap Artist & Producer
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: 900;
+      position: relative;
+      z-index: 1;
     }
     
     .tracks-grid {
@@ -217,6 +403,8 @@ title: SUSINIRGS - Trap Artist & Producer
       gap: 30px;
       max-width: 1200px;
       margin: 0 auto;
+      position: relative;
+      z-index: 1;
     }
     
     .track-card {
@@ -565,7 +753,7 @@ title: SUSINIRGS - Trap Artist & Producer
 ---
 
 <!-- Social Links Section -->
-<div class="social-section">
+<div class="social-section" id="connect">
   <h2>🔗 CONNECT WITH ME 🔗</h2>
   <p class="social-subtitle">Join the community and stay updated with fresh beats & announcements</p>
   
@@ -698,20 +886,99 @@ title: SUSINIRGS - Trap Artist & Producer
 
 <!-- Footer -->
 <footer class="footer">
-  <p>&copy; 2025 SUSINIRGS. All Rights Reserved. | Trap Artist & Producer</p>
-  <p style="color: #888; font-size: 12px;">🎵 Made with passion for the culture 🎵</p>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h3>SUSINIRGS</h3>
+      <p>🔥 TRAP | HIP-HOP | BEATS 🔥</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.youtube.com/@susinirgs" target="_blank">YouTube</a>
+      <a href="https://open.spotify.com/intl-es/artist/78uCfenEleQDaQJM21K2fk?si=7O3kEBUITZyZWnRXtJ8bhg" target="_blank">Spotify</a>
+      <a href="https://www.instagram.com/susinirgs/" target="_blank">Instagram</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 SUSINIRGS. All Rights Reserved.</p>
+    <p class="footer-tagline">🎵 Made with passion for the culture | Energía Mística Universal 🎵</p>
+  </div>
   <style>
     .footer {
-      background: #0f0f0f;
+      background: linear-gradient(135deg, #0a0e27 0%, #1a1a3e 100%);
       color: #888;
       text-align: center;
-      padding: 30px 20px;
-      border-top: 2px solid #ff006e;
+      padding: 50px 20px;
+      border-top: 3px solid #ff006e;
       font-size: 14px;
+      position: relative;
+      overflow: hidden;
     }
     
-    .footer p {
-      margin: 5px 0;
+    .footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #ff006e, #ffbe0b, #8338ec, #00ff00);
+      animation: rainbow 5s linear infinite;
+    }
+    
+    @keyframes rainbow {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    
+    .footer-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .footer-logo h3 {
+      font-size: 32px;
+      color: #ff006e;
+      margin: 0 0 10px 0;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    
+    .footer-logo p {
+      color: #ffbe0b;
+      font-weight: 700;
+      margin: 5px 0 30px 0;
+    }
+    
+    .footer-links {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+    
+    .footer-links a {
+      color: #00f5ff;
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      border-bottom: 2px solid transparent;
+    }
+    
+    .footer-links a:hover {
+      color: #00ff00;
+      border-bottom-color: #00ff00;
+      text-shadow: 0 0 10px #00ff00;
+    }
+    
+    .footer-copy {
+      margin: 30px 0 10px 0;
+      color: #bbb;
+    }
+    
+    .footer-tagline {
+      color: #888;
+      font-size: 12px;
+      font-style: italic;
     }
   </style>
 </footer>
