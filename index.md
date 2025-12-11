@@ -51,13 +51,14 @@ title: SUSINIRGS - Trap Artist & Producer
     @media (max-width: 768px) {
       .floating-nav {
         flex-direction: row;
-        top: auto;
-        bottom: 10px;
+        top: 10px;
+        bottom: auto;
         right: 10px;
         left: 10px;
         padding: 10px;
         overflow-x: auto;
         gap: 5px;
+        max-width: calc(100vw - 20px);
       }
       
       .floating-nav .nav-link {
@@ -84,7 +85,7 @@ title: SUSINIRGS - Trap Artist & Producer
   <style>
     .hero-section {
       background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(26, 26, 62, 0.9) 100%), 
-                  url('/CRANEO/silver-surfer-all-alone-in-the-space-wallpaper-with-ai-v0-68daljq9mide1.webp') center/cover;
+                  url('CRANEO/silver-surfer-all-alone-in-the-space-wallpaper-with-ai-v0-68daljq9mide1.webp') center/cover;
       color: #fff;
       padding: 120px 20px;
       text-align: center;
@@ -398,7 +399,7 @@ title: SUSINIRGS - Trap Artist & Producer
     .tracks-section {
       padding: 80px 20px;
       background: linear-gradient(135deg, rgba(15, 15, 15, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%),
-                  url('/CRANEO/Batman-Wallpapers-Desktop-32209.jpg') center/cover fixed;
+                  url('CRANEO/Batman-Wallpapers-Desktop-32209.jpg') center/cover fixed;
       color: #fff;
       position: relative;
     }
@@ -526,18 +527,18 @@ title: SUSINIRGS - Trap Artist & Producer
   <h2>🎨 VISUAL CRANEO 🎨</h2>
   <p class="gallery-subtitle">Arte y estética que define mi música</p>
   <div class="gallery-grid">
-    <div class="gallery-item"><img src="/CRANEO/SPOOKY (1) (1).png" alt="Spooky Art" loading="lazy"></div>
-    <div class="gallery-item"><img src="/CRANEO/@720pts.jpeg" alt="720pts" loading="lazy"></div>
-    <div class="gallery-item"><img src="/CRANEO/GcM5IGVXMAAPiLF.jpeg" alt="Visual Art" loading="lazy"></div>
-    <div class="gallery-item"><img src="/CRANEO/_Freedom starts from within__.jpeg" alt="Freedom" loading="lazy"></div>
-    <div class="gallery-item"><img src="/CRANEO/download - 2025-12-09T124825.697.jpg" alt="Art 1" loading="lazy"></div>
-    <div class="gallery-item"><img src="/CRANEO/download - 2025-12-09T125039.980.jpg" alt="Art 2" loading="lazy"></div>
-    <div class="gallery-item"><img src="/CRANEO/download - 2025-12-09T125120.584.jpg" alt="Art 3" loading="lazy"></div>
-    <div class="gallery-item"><img src="/CRANEO/download - 2025-12-09T125323.452.jpg" alt="Art 4" loading="lazy"></div>
-    <div class="gallery-item"><img src="/CRANEO/silver-surfer-all-alone-in-the-space-wallpaper-with-ai-v0-68daljq9mide1.webp" alt="Silver Surfer" loading="lazy"></div>
-    <div class="gallery-item"><img src="/CRANEO/god.jpg" alt="God" loading="lazy"></div>
-    <div class="gallery-item"><img src="/CRANEO/pollloooo.jpeg" alt="Pollo" loading="lazy"></div>
-    <div class="gallery-item"><img src="/CRANEO/🂡 ʳˡʸᶜʳᵘˢʰ.jpeg" alt="Crush" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/SPOOKY (1) (1).png" alt="Spooky Art" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/@720pts.jpeg" alt="720pts" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/GcM5IGVXMAAPiLF.jpeg" alt="Visual Art" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/_Freedom starts from within__.jpeg" alt="Freedom" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/download - 2025-12-09T124825.697.jpg" alt="Art 1" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/download - 2025-12-09T125039.980.jpg" alt="Art 2" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/download - 2025-12-09T125120.584.jpg" alt="Art 3" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/download - 2025-12-09T125323.452.jpg" alt="Art 4" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/silver-surfer-all-alone-in-the-space-wallpaper-with-ai-v0-68daljq9mide1.webp" alt="Silver Surfer" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/god.jpg" alt="God" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/pollloooo.jpeg" alt="Pollo" loading="lazy"></div>
+    <div class="gallery-item"><img src="CRANEO/🂡 ʳˡʸᶜʳᵘˢʰ.jpeg" alt="Crush" loading="lazy"></div>
   </div>
   
   <style>
