@@ -1,0 +1,109 @@
+/* Custom Brand Styling */
+/* Created: 2025-12-11 17:03:01 UTC */
+
+:root {
+  --brand-blue-primary: #0066cc;
+  --brand-blue-dark: #004999;
+  --brand-blue-light: #3399ff;
+  --brand-blue-accent: #0052a3;
+}
+
+/* Brand Blue Background Styling */
+body {
+  background-color: #f5f7fa;
+}
+
+.bg-brand-blue {
+  background-color: var(--brand-blue-primary);
+}
+
+.bg-brand-blue-dark {
+  background-color: var(--brand-blue-dark);
+}
+
+.bg-brand-blue-light {
+  background-color: var(--brand-blue-light);
+}
+
+.bg-brand-blue-accent {
+  background-color: var(--brand-blue-accent);
+}
+
+/* Text Colors for Brand Blue */
+.text-brand-blue {
+  color: var(--brand-blue-primary);
+}
+
+.text-brand-blue-dark {
+  color: var(--brand-blue-dark);
+}
+
+.text-brand-blue-light {
+  color: var(--brand-blue-light);
+}
+
+/* Brand Blue Borders */
+.border-brand-blue {
+  border-color: var(--brand-blue-primary);
+  border-style: solid;
+  border-width: 1px;
+}
+
+.border-brand-blue-dark {
+  border-color: var(--brand-blue-dark);
+  border-style: solid;
+  border-width: 1px;
+}
+
+/* Brand Blue Buttons */
+.btn-brand-blue {
+  background-color: var(--brand-blue-primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-brand-blue:hover {
+  background-color: var(--brand-blue-dark);
+}
+
+.btn-brand-blue:active {
+  background-color: var(--brand-blue-accent);
+}
+
+/* Brand Blue Links */
+a.link-brand-blue {
+  color: var(--brand-blue-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a.link-brand-blue:hover {
+  color: var(--brand-blue-dark);
+  text-decoration: underline;
+}
+
+/* Hero Section with Brand Blue */
+.hero-brand-blue {
+  background: linear-gradient(135deg, var(--brand-blue-primary) 0%, var(--brand-blue-dark) 100%);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.hero-brand-blue h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-brand-blue p {
+  margin: 10px 0 0 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
