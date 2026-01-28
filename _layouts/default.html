@@ -19,13 +19,13 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
   
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   
   <style>
-    /* Global reset and full-width dark design */
+    /* Global reset and full-width design */
     * {
       margin: 0;
       padding: 0;
@@ -37,14 +37,14 @@
       padding: 0 !important;
       width: 100%;
       min-height: 100vh;
-      background: #0a0e27 !important;
-      color: #ffffff !important;
-      font-family: 'Montserrat', 'Arial', sans-serif !important;
+      background: #1a1a1f !important;
+      color: #f5f0e8 !important;
+      font-family: 'Montserrat', 'Helvetica Neue', sans-serif !important;
       overflow-x: hidden;
     }
     
     body {
-      background: linear-gradient(135deg, #0a0e27 0%, #1a1a3e 50%, #0f0f2e 100%) !important;
+      background: linear-gradient(175deg, #1a1a1f 0%, #151518 50%, #1a1a1f 100%) !important;
       background-attachment: fixed !important;
     }
     
@@ -68,6 +68,21 @@
     body {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+    }
+    
+    /* CSS Variables */
+    :root {
+      --slate-dark: #1a1a1f;
+      --slate-medium: #2a2a32;
+      --slate-light: #3a3a45;
+      --terracotta: #c4654a;
+      --terracotta-light: #d4856a;
+      --cream: #f5f0e8;
+      --cream-muted: #e8e3db;
+      --sage: #7a9a8a;
+      --sage-muted: #5a7a6a;
+      --gold-soft: #c9a962;
+      --gold-muted: #a98942;
     }
   </style>
 </head>
