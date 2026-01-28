@@ -9,7 +9,7 @@ title: SUSINIRGS - Artista Trap & Productor Musical
 <!-- Navigation -->
 <nav class="main-nav" id="main-nav">
   <div class="nav-brand">SUSINIRGS</div>
-  <div class="nav-toggle" onclick="toggleNav()">
+  <div class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation menu" role="button" tabindex="0">
     <span></span>
     <span></span>
     <span></span>
@@ -25,6 +25,11 @@ title: SUSINIRGS - Artista Trap & Productor Musical
 </nav>
 
 <style>
+  /* ===== SCROLL OFFSET FOR FIXED NAV ===== */
+  [id] {
+    scroll-margin-top: 80px;
+  }
+  
   /* ===== TEXTURE OVERLAY ===== */
   #texture-overlay {
     position: fixed;
@@ -790,7 +795,7 @@ title: SUSINIRGS - Artista Trap & Productor Musical
         <div class="spotify-header">
           <span class="platform-badge">Spotify</span>
         </div>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/78uCfenEleQDaQJM21K2fk?utm_source=generator&theme=0" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe title="Spotify Artist Profile - SUSINIRGS" style="border-radius:12px" src="https://open.spotify.com/embed/artist/78uCfenEleQDaQJM21K2fk?utm_source=generator&theme=0" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <a href="https://open.spotify.com/intl-es/artist/78uCfenEleQDaQJM21K2fk" target="_blank" class="spotify-link">
           Abrir en Spotify →
         </a>
@@ -948,7 +953,6 @@ title: SUSINIRGS - Artista Trap & Productor Musical
       border: 1px solid transparent;
       transition: all 0.3s ease;
       text-decoration: none;
-      cursor: pointer;
     }
     
     .track-item:hover {
@@ -1051,7 +1055,7 @@ title: SUSINIRGS - Artista Trap & Productor Musical
       <div class="video-card featured">
         <div class="video-label">Destacado</div>
         <div class="video-wrapper">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/cB5sIhH067A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/cB5sIhH067A" title="SUSINIRGS - Proyecto Más Reciente" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="video-info">
           <h3>Proyecto Más Reciente</h3>
@@ -1065,7 +1069,7 @@ title: SUSINIRGS - Artista Trap & Productor Musical
       
       <div class="video-card">
         <div class="video-wrapper">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/uDAziScqsUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/uDAziScqsUk" title="SUSINIRGS - Video Más Craneado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="video-info">
           <h3>Video Más Craneado</h3>
@@ -1078,7 +1082,7 @@ title: SUSINIRGS - Artista Trap & Productor Musical
       
       <div class="video-card">
         <div class="video-wrapper">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/zAjGlkn3udw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/zAjGlkn3udw" title="SUSINIRGS - Energía Mística Universal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="video-info">
           <h3>Energía Mística Universal</h3>
